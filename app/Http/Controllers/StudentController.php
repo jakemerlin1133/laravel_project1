@@ -13,4 +13,8 @@ class StudentController extends Controller
 
         return view('index',['students' => $data]);
     }
+
+    public function create(){
+        return view('register');
+    }
 }
