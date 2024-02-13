@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    @vite('resources/css/app.css')
-    <title>Document</title>
-</head>
-<body>
-
+@include('partials.header')
 
 <div class="mt-64">
 <form class="max-w-sm mx-auto">
@@ -25,8 +15,6 @@
   </form>
 </div>
 
+@include('partials.footer')
 
 
-<script src="../path/to/flowbite/dist/flowbite.min.js"></script>
-</body>
-</html>
