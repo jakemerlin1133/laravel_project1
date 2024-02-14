@@ -28,6 +28,8 @@ class StudentController extends Controller
 
             return redirect('/homepage');
         }
+
+        return back()->withErrors(['email' => 'Login Failed.'])->onlyInput('email');
     }
 
     public function register(){
