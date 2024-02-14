@@ -27,9 +27,11 @@ class StudentController extends Controller
             $request->session()->regenerate();
 
             return redirect('/homepage');
-        }
+        }else{
 
-        return back()->withErrors(['email' => 'Login Failed.'])->onlyInput('email');
+
+            return back()->withErrors(['email' => 'Login Failed.'])->onlyInput('email');
+        }
     }
 
     public function register(){
